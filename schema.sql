@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS products (
 );
 CREATE TABLE IF NOT EXISTS orders (
   id TEXT PRIMARY KEY,
-  stripe_session_id TEXT,
+  dojo_payment_intent_id TEXT,
   name TEXT NOT NULL,
   email TEXT NOT NULL,
   phone TEXT NOT NULL,
@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS orders (
   paid_at TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_orders_delivery_status ON orders(delivery_date,status);
+CREATE INDEX IF NOT EXISTS idx_orders_dojo_payment ON orders(dojo_payment_intent_id);
 INSERT OR IGNORE INTO products VALUES ('fruit-box','Fruit & Veg Box','Boxes',28,'🥕','Seasonal selection',20,1);
 INSERT OR IGNORE INTO products VALUES ('salad','Organic Salad','Salads',4.5,'🥬','Fresh & crisp',30,1);
 INSERT OR IGNORE INTO products VALUES ('juice','Organic Juice','Juices',4,'🧃','Cold pressed',24,1);
