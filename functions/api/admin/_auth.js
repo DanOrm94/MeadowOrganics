@@ -1,0 +1,5 @@
+const enc=new TextEncoder();
+async function key(secret){return crypto.subtle.importKey('raw',enc.encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign','verify'])}
+export async function sign(value,secret){const k=await key(secret);const sig=await crypto.subtle.sign('HMAC',k,enc.encode(value));return btoa(value+'.'+[...new Uint8Array(sig)].map(b=>b.toString(16).padStart(2,'0')).join(''))}
+export async function auth(request,env){const raw=request.headers.get('Cookie')||'';const token=raw.split(';').map(x=>x.trim()).find(x=>x.startsWith('meadow_admin='))?.slice(13);if(!token)return false;const decoded=atob(token);const dot=decoded.lastIndexOf('.');if(dot<0)return false;const value=decoded.slice(0,dot),sig=decoded.slice(dot+1);const k=await key(env.ADMIN_SESSION_SECRET);const expected=await crypto.subtle.sign('HMAC',k,enc.encode(value));const hex=[...new Uint8Array(expected)].map(b=>b.toString(16).padStart(2,'0')).join('');return sig===hex&&Number(value.split('|')[1])>Date.now();}
+export const cookie=token=>`meadow_admin=${token}; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=28800`;
