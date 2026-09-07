@@ -1,0 +1,2 @@
+import {sign,cookie} from './_auth.js';
+export async function onRequestPost({request,env}){try{const {email,password}=await request.json();if(email!==env.ADMIN_EMAIL||password!==env.ADMIN_PASSWORD)return Response.json({error:'Invalid email or password.'},{status:401});const value=`${email}|${Date.now()+28800000}`;const token=await sign(value,env.ADMIN_SESSION_SECRET);return new Response(JSON.stringify({ok:true}),{headers:{'Content-Type':'application/json','Set-Cookie':cookie(token)}})}catch{return Response.json({error:'Login failed.'},{status:400})}}
