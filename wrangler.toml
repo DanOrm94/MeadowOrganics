@@ -1,0 +1,14 @@
+name = "meadow-organics-orders"
+main = "worker.js"
+compatibility_date = "2026-09-07"
+
+[triggers]
+crons = ["0 19 * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "meadow-organics"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[vars]
+RESEND_FROM = "Meadow Organics <admin@meadoworganicsmcr.co.uk>"
