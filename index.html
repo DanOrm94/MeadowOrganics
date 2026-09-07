@@ -1,67 +1,13 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meadow Organics | Pure. Natural. Wholesome.</title>
-  <meta name="description" content="Meadow Organics — carefully sourced organic fruit, vegetables, salads, juices and local honey from trusted growers and suppliers." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="announcement">Pure. Natural. Wholesome. &nbsp; • &nbsp; Local & organic produce for Manchester.</div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Meadow Organics home">
-      <span class="brand-mark">✦</span>
-      <span><b>MEADOW</b><small>ORGANICS</small></span>
-    </a>
-    <button class="mobile-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
-    <nav id="nav" class="nav">
-      <a href="#shop">Shop</a><a href="#about">Our story</a><a href="#promise">Our promise</a><a href="#contact">Contact</a>
-      <a class="admin-link" href="admin.html">Admin</a>
-    </nav>
-    <button class="cart-button" id="openCart" aria-label="Open basket">Basket <span id="cartCount">0</span></button>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">BETTER FOR YOU • BETTER FOR NATURE</p>
-        <h1>Good food,<br><em>grown with care.</em></h1>
-        <p class="hero-text">Carefully sourced organic fruit, vegetables, salads, juices and local honey from trusted growers and suppliers.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#shop">Shop the meadow</a><a class="button button-ghost" href="#promise">Why choose us?</a></div>
-        <div class="mini-trust"><span>✓ Certified organic</span><span>✓ No synthetic pesticides</span><span>✓ Sustainable farming</span></div>
-      </div>
-      <div class="hero-art reveal delay-1" aria-hidden="true">
-        <div class="sun"></div><div class="hill hill-a"></div><div class="hill hill-b"></div><div class="field field-a"></div><div class="field field-b"></div>
-        <div class="basket-art"><span class="veg v1"></span><span class="veg v2"></span><span class="veg v3"></span><span class="veg v4"></span><span class="veg v5"></span></div>
-      </div>
-    </section>
-
-    <section class="strip" id="promise"><div><strong>CAREFULLY SOURCED</strong><span>Trusted growers & suppliers</span></div><div><strong>ORGANIC</strong><span>Certified organic products</span></div><div><strong>GOOD TO NATURE</strong><span>Supporting sustainable farming</span></div></section>
-
-    <section class="section" id="shop">
-      <div class="section-heading reveal"><div><p class="eyebrow">WHAT YOU'LL FIND</p><h2>The organic shop</h2></div><p>Fresh favourites for the week ahead. Inventory and prices are controlled from the admin area.</p></div>
-      <div class="category-row" id="categories"></div>
-      <div class="product-grid" id="productGrid"></div>
-    </section>
-
-    <section class="story section" id="about">
-      <div class="story-image reveal"><div class="story-card"><span>MEADOW</span><b>ORGANICS</b><small>EST. LOCAL</small></div></div>
-      <div class="story-copy reveal delay-1"><p class="eyebrow">OUR STORY</p><h2>From trusted growers to your table.</h2><p>We choose every product for quality, freshness and sustainability — with a simple belief: better food should feel good for you and good for the land it came from.</p><p>Our range focuses on seasonal fruit, fresh vegetables, organic salads, local honey, organic juices, eggs, jams and fruit & veg boxes.</p><a href="#shop" class="text-link">Explore the range →</a></div>
-    </section>
-
-    <section class="values section"><div class="value-card"><span>01</span><h3>Fresh first</h3><p>Seasonal produce chosen for flavour, freshness and everyday practicality.</p></div><div class="value-card"><span>02</span><h3>Local where possible</h3><p>We prioritise trusted suppliers and local makers when the right products are available.</p></div><div class="value-card"><span>03</span><h3>Less compromise</h3><p>Organic choices made with care, without synthetic pesticides and with sustainability in mind.</p></div></section>
-
-    <section class="cta section"><div><p class="eyebrow">THIS WEEK AT MEADOW</p><h2>Make something wholesome.</h2><p>Order online today and select your delivery or collection date.</p></div><a class="button button-light" href="#shop">Start your order</a></section>
-  </main>
-
-  <footer id="contact" class="footer"><div class="footer-brand"><span class="brand-mark">✦</span><b>MEADOW ORGANICS</b><p>Pure. Natural. Wholesome.</p></div><div><h4>Contact</h4><a href="tel:07507196146">07507 196146</a><a href="mailto:admin@meadoworganicsmcr.co.uk">admin@meadoworganicsmcr.co.uk</a></div><div><h4>Follow</h4><a href="https://www.instagram.com/meadow.organics.mcr/" target="_blank" rel="noreferrer">Instagram</a><a href="#" aria-label="Facebook">Facebook</a></div></footer>
-
-  <div class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><h3>Your basket</h3><button id="closeCart" class="icon-button">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div><span>Total</span><strong id="cartTotal">£0.00</strong></div><button class="button button-primary full" id="checkoutButton">Checkout</button><small>Payments are handled securely by Stripe once configured.</small></div></div>
-  <div class="backdrop" id="backdrop"></div>
-  <script src="app.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Meadow Organics | Pure. Natural. Wholesome.</title><meta name="description" content="Meadow Organics — carefully sourced organic fruit, vegetables, salads, juices and local honey from trusted growers and suppliers." /><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css" /><style>.checkout-modal{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:20px;background:rgba(25,31,26,.55);backdrop-filter:blur(8px);opacity:0;visibility:hidden;transition:.25s}.checkout-modal.show{opacity:1;visibility:visible}.checkout-box{width:min(560px,100%);max-height:90vh;overflow:auto;background:#fbf8f1;border:1px solid #d9d0bf;border-radius:28px;padding:30px;box-shadow:0 30px 80px rgba(0,0,0,.2)}.checkout-box h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;color:#30372e;margin:0}.checkout-close{float:right;border:1px solid #d9d0bf;background:transparent;border-radius:50%;width:38px;height:38px;font-size:1.4rem;cursor:pointer}.checkout-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.checkout-field{display:grid;gap:6px;margin-top:14px}.checkout-field.full{grid-column:1/-1}.checkout-field label{font-size:.78rem;font-weight:700;letter-spacing:.06em}.checkout-field input{padding:12px 13px;border:1px solid #d9d0bf;border-radius:12px;background:#fffdf7;font:inherit}.checkout-summary{margin:20px 0;padding:16px;background:#eee8db;border-radius:15px}.checkout-error{color:#8b4339;min-height:22px;font-size:.9rem}@media(max-width:620px){.checkout-grid{grid-template-columns:1fr}.checkout-field.full{grid-column:auto}}</style></head>
+<body><div class="announcement">Pure. Natural. Wholesome. &nbsp; • &nbsp; Local & organic produce for Manchester.</div>
+<header class="site-header"><a class="brand" href="#home" aria-label="Meadow Organics home"><span class="brand-mark">✦</span><span><b>MEADOW</b><small>ORGANICS</small></span></a><button class="mobile-toggle" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav" class="nav"><a href="#shop">Shop</a><a href="#about">Our story</a><a href="#promise">Our promise</a><a href="#contact">Contact</a><a class="admin-link" href="admin.html">Admin</a></nav><button class="cart-button" id="openCart" aria-label="Open basket">Basket <span id="cartCount">0</span></button></header>
+<main id="home"><section class="hero"><div class="hero-copy reveal"><p class="eyebrow">BETTER FOR YOU • BETTER FOR NATURE</p><h1>Good food,<br><em>grown with care.</em></h1><p class="hero-text">Carefully sourced organic fruit, vegetables, salads, juices and local honey from trusted growers and suppliers.</p><div class="hero-actions"><a class="button button-primary" href="#shop">Shop the meadow</a><a class="button button-ghost" href="#promise">Why choose us?</a></div><div class="mini-trust"><span>✓ Certified organic</span><span>✓ No synthetic pesticides</span><span>✓ Sustainable farming</span></div></div><div class="hero-art reveal delay-1" aria-hidden="true"><div class="sun"></div><div class="hill hill-a"></div><div class="hill hill-b"></div><div class="field field-a"></div><div class="field field-b"></div><div class="basket-art"><span class="veg v1"></span><span class="veg v2"></span><span class="veg v3"></span><span class="veg v4"></span><span class="veg v5"></span></div></div></section>
+<section class="strip" id="promise"><div><strong>CAREFULLY SOURCED</strong><span>Trusted growers & suppliers</span></div><div><strong>ORGANIC</strong><span>Certified organic products</span></div><div><strong>GOOD TO NATURE</strong><span>Supporting sustainable farming</span></div></section>
+<section class="section" id="shop"><div class="section-heading reveal"><div><p class="eyebrow">WHAT YOU'LL FIND</p><h2>The organic shop</h2></div><p>Fresh favourites for the week ahead. Inventory and prices are controlled from the admin area.</p></div><div class="category-row" id="categories"></div><div class="product-grid" id="productGrid"></div></section>
+<section class="story section" id="about"><div class="story-image reveal"><div class="story-card"><span>MEADOW</span><b>ORGANICS</b><small>EST. LOCAL</small></div></div><div class="story-copy reveal delay-1"><p class="eyebrow">OUR STORY</p><h2>From trusted growers to your table.</h2><p>We choose every product for quality, freshness and sustainability — with a simple belief: better food should feel good for you and good for the land it came from.</p><p>Our range focuses on seasonal fruit, fresh vegetables, organic salads, local honey, organic juices, eggs, jams and fruit & veg boxes.</p><a href="#shop" class="text-link">Explore the range →</a></div></section>
+<section class="values section"><div class="value-card"><span>01</span><h3>Fresh first</h3><p>Seasonal produce chosen for flavour, freshness and everyday practicality.</p></div><div class="value-card"><span>02</span><h3>Local where possible</h3><p>We prioritise trusted suppliers and local makers when the right products are available.</p></div><div class="value-card"><span>03</span><h3>Less compromise</h3><p>Organic choices made with care, without synthetic pesticides and with sustainability in mind.</p></div></section><section class="cta section"><div><p class="eyebrow">THIS WEEK AT MEADOW</p><h2>Make something wholesome.</h2><p>Order online today and select your delivery or collection date.</p></div><a class="button button-light" href="#shop">Start your order</a></section></main>
+<footer id="contact" class="footer"><div class="footer-brand"><span class="brand-mark">✦</span><b>MEADOW ORGANICS</b><p>Pure. Natural. Wholesome.</p></div><div><h4>Contact</h4><a href="tel:07507196146">07507 196146</a><a href="mailto:admin@meadoworganicsmcr.co.uk">admin@meadoworganicsmcr.co.uk</a></div><div><h4>Follow</h4><a href="https://www.instagram.com/meadow.organics.mcr/" target="_blank" rel="noreferrer">Instagram</a><a href="#" aria-label="Facebook">Facebook</a></div></footer>
+<div class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><h3>Your basket</h3><button id="closeCart" class="icon-button">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div><span>Total</span><strong id="cartTotal">£0.00</strong></div><button class="button button-primary full" id="checkoutButton">Secure checkout</button><small>You'll be taken to Stripe's secure payment page.</small></div></div><div class="backdrop" id="backdrop"></div>
+<div class="checkout-modal" id="checkoutModal" aria-hidden="true"><form class="checkout-box" id="checkoutForm"><button type="button" class="checkout-close" id="checkoutClose">×</button><p class="eyebrow">ORDER YOUR GOODNESS</p><h2>Almost there.</h2><p>Tell us where to send your order. Payment is completed securely by Stripe.</p><div class="checkout-grid"><div class="checkout-field"><label for="customerName">FULL NAME</label><input id="customerName" required autocomplete="name"></div><div class="checkout-field"><label for="customerPhone">PHONE</label><input id="customerPhone" required type="tel" autocomplete="tel"></div><div class="checkout-field full"><label for="customerEmail">EMAIL</label><input id="customerEmail" required type="email" autocomplete="email"></div><div class="checkout-field full"><label for="deliveryDate">DELIVERY / COLLECTION DATE</label><input id="deliveryDate" required type="date"></div></div><div class="checkout-summary"><strong>Order total</strong><span style="float:right" id="checkoutTotal">£0.00</span></div><p class="checkout-error" id="checkoutError"></p><button class="button button-primary full" id="payButton">Continue to secure payment</button></form></div>
+<script src="app.js"></script></body></html>
