@@ -5,311 +5,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Customer Satisfaction | Meadow Organics</title>
-    <meta name="description"
-        content="Tell Meadow Organics what you think. Family-run, community-focused organic food for health and wellbeing.">
+    <meta name="description" content="Tell Meadow Organics what you think. Family-run, community-focused organic food for health and wellbeing.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .brand-logo {
-            width: 56px;
-            height: 56px;
-            object-fit: contain;
-            display: block;
-            flex: none
-        }
-
-        .brand-wordmark {
-            display: block
-        }
-
-        .footer-logo {
-            width: 72px;
-            height: 72px;
-            margin-bottom: 10px
-        }
-
-        .site-photo {
-            width: 100%;
-            height: 100%;
-            min-height: 300px;
-            object-fit: cover;
-            display: block;
-            border-radius: inherit
-        }
-
-        .photo-card {
-            overflow: hidden;
-            border-radius: 28px;
-            background: #e7dfce;
-            box-shadow: 0 15px 35px rgba(45, 48, 40, .08)
-        }
-
-        .photo-card img {
-            width: 100%;
-            height: 330px;
-            object-fit: cover;
-            display: block
-        }
-
-        .satisfaction-hero .site-photo {
-            min-height: 390px
-        }
-
-        .family-panel {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 35px;
-            align-items: center;
-            background: #30372e;
-            color: #f5f0e7
-        }
-
-        .family-panel h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(3rem, 5vw, 5rem);
-            line-height: .95;
-            margin: 0;
-            color: #fff
-        }
-
-        .family-panel p:not(.eyebrow) {
-            line-height: 1.8;
-            color: #dbe0d8;
-            max-width: 600px
-        }
-
-        .family-panel .eyebrow {
-            color: #bfc6b6
-        }
-
-        .family-image {
-            min-height: 360px
-        }
-
-        .gallery-images {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px
-        }
-
-        .gallery-images img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 22px;
-            display: block
-        }
-
-        .gallery-label {
-            font-size: .72rem;
-            letter-spacing: .15em;
-            font-weight: 800;
-            color: #66705f;
-            margin: 10px 0 0
-        }
-
-        @media(max-width:980px) {
-            .family-panel {
-                grid-template-columns: 1fr
-            }
-
-            .gallery-images {
-                grid-template-columns: 1fr 1fr
-            }
-        }
-
-        @media(max-width:620px) {
-            .brand-logo {
-                width: 46px;
-                height: 46px
-            }
-
-            .footer-logo {
-                width: 64px;
-                height: 64px
-            }
-
-            .gallery-images {
-                grid-template-columns: 1fr
-            }
-
-            .gallery-images img {
-                height: 260px
-            }
-        }
+        .brand-logo{width:56px;height:56px;object-fit:contain;display:block;flex:none}.brand-wordmark{display:block}.footer-logo{width:72px;height:72px;margin-bottom:10px}.site-photo{width:100%;height:100%;min-height:300px;object-fit:cover;display:block;border-radius:inherit}.photo-card{overflow:hidden;border-radius:28px;background:#e7dfce;box-shadow:0 15px 35px rgba(45,48,40,.08)}.photo-card img{width:100%;height:330px;object-fit:cover;display:block}.satisfaction-hero .site-photo{min-height:390px}.satisfaction-video{width:100%;height:390px;display:block;object-fit:cover;border-radius:inherit;background:#30372e}.family-panel{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;background:#30372e;color:#f5f0e7}.family-panel h2{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5vw,5rem);line-height:.95;margin:0;color:#fff}.family-panel p:not(.eyebrow){line-height:1.8;color:#dbe0d8;max-width:600px}.family-panel .eyebrow{color:#bfc6b6}.family-image{min-height:360px}.gallery-images{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gallery-images img{width:100%;height:300px;object-fit:cover;border-radius:22px;display:block}.gallery-label{font-size:.72rem;letter-spacing:.15em;font-weight:800;color:#66705f;margin:10px 0 0}.@media(max-width:980px){.family-panel{grid-template-columns:1fr}.gallery-images{grid-template-columns:1fr 1fr}}@media(max-width:620px){.brand-logo{width:46px;height:46px}.footer-logo{width:64px;height:64px}.gallery-images{grid-template-columns:1fr}.gallery-images img{height:260px}.satisfaction-video{height:320px;min-height:320px}}
     </style>
 </head>
 
 <body>
     <div class="announcement">Family run • Organic food • Health & wellbeing • Proudly serving our community</div>
-    <header class="site-header"><a class="brand" href="index.html" aria-label="Meadow Organics home"><img
-                class="brand-logo" src="logo.png" alt="Meadow Organics logo"><span
-                class="brand-wordmark"><b>MEADOW</b><small>ORGANICS</small></span></a><button class="mobile-toggle"
-            aria-expanded="false" aria-controls="nav">Menu</button>
-        <nav id="nav" class="nav"><a href="menu.html">Fresh Stock and order</a><a href="index.html#about">Our story</a><a
-                href="index.html#promise">Our promise</a><a href="customer-satisfaction.html"
-                class="nav-current">Customer satisfaction</a><a href="index.html#contact">Contact</a><a
-                class="admin-link" href="admin.html">Admin</a></nav><a class="cart-button" href="menu.html">Shop</a>
+    <header class="site-header"><a class="brand" href="index.html" aria-label="Meadow Organics home"><img class="brand-logo" src="logo.png" alt="Meadow Organics logo"><span class="brand-wordmark"><b>MEADOW</b><small>ORGANICS</small></span></a><button class="mobile-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav id="nav" class="nav"><a href="menu.html">Fresh Stock and order</a><a href="index.html#about">Our story</a><a href="index.html#promise">Our promise</a><a href="customer-satisfaction.html" class="nav-current">Customer satisfaction</a><a href="index.html#contact">Contact</a><a class="admin-link" href="admin.html">Admin</a></nav><a class="cart-button" href="menu.html">Shop</a>
     </header>
     <main>
         <section class="page-hero satisfaction-hero">
             <div>
                 <p class="eyebrow">YOUR EXPERIENCE MATTERS</p>
                 <h1>Good food.<br><em>Happy customers.</em></h1>
-                <p>We are a family-run business with a simple purpose: provide our community with carefully grown and
-                    sourced organic food that supports healthier everyday living and wellbeing.</p><a
-                    class="button button-primary" href="#feedback">Leave feedback</a>
+                <p>We are a family-run business with a simple purpose: provide our community with carefully grown and sourced organic food that supports healthier everyday living and wellbeing.</p><a class="button button-primary" href="#feedback">Leave feedback</a>
             </div>
-            <div class="photo-card satisfaction-placeholder"><img class="site-photo" src="cunhasmoothie.png"
-                    alt="Fresh organic produce from Meadow Organics"></div>
+            <div class="photo-card satisfaction-placeholder"><video class="satisfaction-video" autoplay muted loop playsinline preload="metadata" aria-label="Meadow Organics promotional video"><source src="cunhavideo.mp4" type="video/mp4">Your browser does not support the video element.</video></div>
         </section>
         <section class="section family-panel">
-            <div class="photo-card family-image"><img class="site-photo" src="image%20(2).jpg"
-                    alt="Organic food and produce from Meadow Organics"></div>
-            <div>
-                <p class="eyebrow">FAMILY RUN • COMMUNITY FOCUSED</p>
-                <h2>Food with a purpose.</h2>
-                <p>Meadow Organics is built around family values, good food and looking after the people around us. We
-                    believe access to quality organic produce can play an important part in health, wellbeing and a
-                    stronger local community.</p>
-                <p>Every box, salad, juice and pantry favourite is selected with care — bringing wholesome choices from
-                    trusted growers and suppliers closer to home.</p>
-            </div>
+            <div class="photo-card family-image"><img class="site-photo" src="image%20(2).jpg" alt="Organic food and produce from Meadow Organics"></div>
+            <div><p class="eyebrow">FAMILY RUN • COMMUNITY FOCUSED</p><h2>Food with a purpose.</h2><p>Meadow Organics is built around family values, good food and looking after the people around us. We believe access to quality organic produce can play an important part in health, wellbeing and a stronger local community.</p><p>Every box, salad, juice and pantry favourite is selected with care — bringing wholesome choices from trusted growers and suppliers closer to home.</p></div>
         </section>
         <section class="section" id="feedback">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">CUSTOMER SATISFACTION</p>
-                    <h2>How did we do?</h2>
-                </div>
-                <p>Your feedback helps our family business listen, improve and keep serving the community well.</p>
-            </div>
+            <div class="section-heading"><div><p class="eyebrow">CUSTOMER SATISFACTION</p><h2>How did we do?</h2></div><p>Your feedback helps our family business listen, improve and keep serving the community well.</p></div>
             <div class="feedback-layout">
-                <form class="feedback-card" id="feedbackForm">
-                    <div class="feedback-grid">
-                        <div class="checkout-field"><label for="feedbackName">NAME</label><input id="feedbackName"
-                                name="name" placeholder="Your name" required></div>
-                        <div class="checkout-field"><label for="feedbackEmail">EMAIL</label><input id="feedbackEmail"
-                                name="email" type="email" placeholder="you@example.com"></div>
-                        <div class="checkout-field full"><label>YOUR RATING</label>
-                            <div class="rating-row" role="radiogroup" aria-label="Rating"><label><input type="radio"
-                                        name="rating" value="5" required><span>5</span></label><label><input
-                                        type="radio" name="rating" value="4"><span>4</span></label><label><input
-                                        type="radio" name="rating" value="3"><span>3</span></label><label><input
-                                        type="radio" name="rating" value="2"><span>2</span></label><label><input
-                                        type="radio" name="rating" value="1"><span>1</span></label></div>
-                        </div>
-                        <div class="checkout-field full"><label for="feedbackMessage">YOUR FEEDBACK</label><textarea
-                                id="feedbackMessage" name="message" rows="6"
-                                placeholder="Tell us about your experience..." required></textarea></div>
-                    </div>
-                    <p class="feedback-note">This form is ready for backend submission. For now, it demonstrates the
-                        customer experience without sending data anywhere.</p><button class="button button-primary"
-                        type="submit">Send feedback</button>
-                    <p class="checkout-error" id="feedbackStatus" aria-live="polite"></p>
-                </form>
-                <div class="satisfaction-side">
-                    <div class="photo-card review-image-placeholder"><img class="site-photo" src="image%20(3).jpg"
-                            alt="Fresh produce and community food"></div>
-                    <div class="review-quote"><span>“</span>
-                        <p>Customer reviews will live here once feedback is collected.</p><small>MEADOW ORGANICS
-                            CUSTOMER STORIES</small>
-                    </div>
-                </div>
+                <form class="feedback-card" id="feedbackForm"><div class="feedback-grid"><div class="checkout-field"><label for="feedbackName">NAME</label><input id="feedbackName" name="name" placeholder="Your name" required></div><div class="checkout-field"><label for="feedbackEmail">EMAIL</label><input id="feedbackEmail" name="email" type="email" placeholder="you@example.com"></div><div class="checkout-field full"><label>YOUR RATING</label><div class="rating-row" role="radiogroup" aria-label="Rating"><label><input type="radio" name="rating" value="5" required><span>5</span></label><label><input type="radio" name="rating" value="4"><span>4</span></label><label><input type="radio" name="rating" value="3"><span>3</span></label><label><input type="radio" name="rating" value="2"><span>2</span></label><label><input type="radio" name="rating" value="1"><span>1</span></label></div></div><div class="checkout-field full"><label for="feedbackMessage">YOUR FEEDBACK</label><textarea id="feedbackMessage" name="message" rows="6" placeholder="Tell us about your experience..." required></textarea></div></div><p class="feedback-note">This form is ready for backend submission. For now, it demonstrates the customer experience without sending data anywhere.</p><button class="button button-primary" type="submit">Send feedback</button><p class="checkout-error" id="feedbackStatus" aria-live="polite"></p></form>
+                <div class="satisfaction-side"><div class="photo-card review-image-placeholder"><img class="site-photo" src="image%20(3).jpg" alt="Fresh produce and community food"></div><div class="review-quote"><span>“</span><p>Customer reviews will live here once feedback is collected.</p><small>MEADOW ORGANICS CUSTOMER STORIES</small></div></div>
             </div>
         </section>
-        <section class="section">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">OUR COMMUNITY</p>
-                    <h2>Real food. Real care.</h2>
-                </div>
-                <p>These images are now part of the site so customers can see the food, people and atmosphere behind the
-                    Meadow Organics story.</p>
-            </div>
-            <div class="gallery-images">
-                <div><img src="image%20(4).jpg" alt="Meadow Organics produce">
-                    <p class="gallery-label">FRESH PRODUCE</p>
-                </div>
-                <div><img src="image%20(5).jpg" alt="Organic food at Meadow Organics">
-                    <p class="gallery-label">ORGANIC GOODNESS</p>
-                </div>
-                <div><img src="image%20(6).jpg" alt="Community and food at Meadow Organics">
-                    <p class="gallery-label">OUR COMMUNITY</p>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="gallery-images">
-                <div><img src="image%20(7).jpg" alt="Meadow Organics food">
-                    <p class="gallery-label">CAREFULLY SELECTED</p>
-                </div>
-                <div><img src="image%20(8).jpg" alt="Fresh organic ingredients">
-                    <p class="gallery-label">GOOD FOR YOU</p>
-                </div>
-                <div><img src="image%20(9).jpg" alt="Organic produce">
-                    <p class="gallery-label">GOOD TO NATURE</p>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="gallery-images">
-                <div><img src="image%20(10).jpg" alt="Meadow Organics produce">
-                    <p class="gallery-label">FRESH EVERY DAY</p>
-                </div>
-                <div><img src="image%20(11).jpg" alt="Organic food and produce">
-                    <p class="gallery-label">WHOLESOME CHOICES</p>
-                </div>
-                <div><img src="image%20(12).jpg" alt="Meadow Organics community food">
-                    <p class="gallery-label">FAMILY VALUES</p>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="gallery-images">
-                <div><img src="image%20(13).jpg" alt="Organic produce">
-                    <p class="gallery-label">GROWN WITH CARE</p>
-                </div>
-                <div><img src="image%20(14).jpg" alt="Fresh food">
-                    <p class="gallery-label">LOCAL CONNECTION</p>
-                </div>
-                <div><img src="image%20(15).jpg" alt="Meadow Organics food">
-                    <p class="gallery-label">HEALTH & WELLBEING</p>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="gallery-images">
-                <div><img src="image%20(16).jpg" alt="Organic produce">
-                    <p class="gallery-label">COMMUNITY FIRST</p>
-                </div>
-                <div><img src="image%20(17).jpg" alt="Fresh organic food">
-                    <p class="gallery-label">MEADOW ORGANICS</p>
-                </div>
-                <div class="photo-card"><img class="site-photo" src="cunhasmoothie.png"
-                        alt="Meadow Organics promotional smoothie feature"></div>
-            </div>
-        </section>
+        <section class="section"><div class="section-heading"><div><p class="eyebrow">OUR COMMUNITY</p><h2>Real food. Real care.</h2></div><p>These images are now part of the site so customers can see the food, people and atmosphere behind the Meadow Organics story.</p></div><div class="gallery-images"><div><img src="image%20(4).jpg" alt="Meadow Organics produce"><p class="gallery-label">FRESH PRODUCE</p></div><div><img src="image%20(5).jpg" alt="Organic food at Meadow Organics"><p class="gallery-label">ORGANIC GOODNESS</p></div><div><img src="image%20(6).jpg" alt="Community and food at Meadow Organics"><p class="gallery-label">OUR COMMUNITY</p></div></div></section>
+        <section class="section"><div class="gallery-images"><div><img src="image%20(7).jpg" alt="Meadow Organics food"><p class="gallery-label">CAREFULLY SELECTED</p></div><div><img src="image%20(8).jpg" alt="Fresh organic ingredients"><p class="gallery-label">GOOD FOR YOU</p></div><div><img src="image%20(9).jpg" alt="Organic produce"><p class="gallery-label">GOOD TO NATURE</p></div></div></section>
+        <section class="section"><div class="gallery-images"><div><img src="image%20(10).jpg" alt="Meadow Organics produce"><p class="gallery-label">FRESH EVERY DAY</p></div><div><img src="image%20(11).jpg" alt="Organic food and produce"><p class="gallery-label">WHOLESOME CHOICES</p></div><div><img src="image%20(12).jpg" alt="Meadow Organics community food"><p class="gallery-label">FAMILY VALUES</p></div></div></section>
+        <section class="section"><div class="gallery-images"><div><img src="image%20(13).jpg" alt="Organic produce"><p class="gallery-label">GROWN WITH CARE</p></div><div><img src="image%20(14).jpg" alt="Fresh food"><p class="gallery-label">LOCAL CONNECTION</p></div><div><img src="image%20(15).jpg" alt="Meadow Organics food"><p class="gallery-label">HEALTH & WELLBEING</p></div></div></section>
+        <section class="section"><div class="gallery-images"><div><img src="image%20(16).jpg" alt="Organic produce"><p class="gallery-label">COMMUNITY FIRST</p></div><div><img src="image%20(17).jpg" alt="Fresh organic food"><p class="gallery-label">MEADOW ORGANICS</p></div><div class="photo-card"><video class="satisfaction-video" autoplay muted loop playsinline preload="metadata" aria-label="Meadow Organics promotional video"><source src="cunhavideo.mp4" type="video/mp4">Your browser does not support the video element.</video></div></div></section>
     </main>
-    <footer class="footer">
-        <div class="footer-brand"><img class="brand-logo footer-logo" src="logo.png"
-                alt="Meadow Organics logo"><b>MEADOW ORGANICS</b>
-            <p>Family run. Community focused. Pure. Natural. Wholesome.</p>
-        </div>
-        <div>
-            <h4>Contact</h4><a href="tel:07507196146">07507 196146</a><a
-                href="mailto:admin@meadoworganicsmcr.co.uk">admin@meadoworganicsmcr.co.uk</a>
-        </div>
-        <div>
-            <h4>Explore</h4><a href="menu.html">Menu</a><a href="index.html">Home</a><a
-                href="https://www.instagram.com/meadow.organics.mcr/" target="_blank" rel="noreferrer">Instagram</a>
-        </div>
-    </footer>
-    <script>document.querySelector('.mobile-toggle')?.addEventListener('click', () => { const n = document.getElementById('nav'); n.classList.toggle('show'); document.querySelector('.mobile-toggle').setAttribute('aria-expanded', n.classList.contains('show')) }); document.getElementById('feedbackForm')?.addEventListener('submit', e => { e.preventDefault(); document.getElementById('feedbackStatus').textContent = 'Thank you — your feedback has been recorded for this demo. We can connect this form to the business email next.' });</script>
+    <footer class="footer"><div class="footer-brand"><img class="brand-logo footer-logo" src="logo.png" alt="Meadow Organics logo"><b>MEADOW ORGANICS</b><p>Family run. Community focused. Pure. Natural. Wholesome.</p></div><div><h4>Contact</h4><a href="tel:07507196146">07507 196146</a><a href="mailto:admin@meadoworganicsmcr.co.uk">admin@meadoworganicsmcr.co.uk</a></div><div><h4>Explore</h4><a href="menu.html">Fresh stock & order</a><a href="index.html">Home</a><a href="https://www.instagram.com/meadow.organics.mcr/" target="_blank" rel="noreferrer">Instagram</a></div></footer>
+    <script>document.querySelector('.mobile-toggle')?.addEventListener('click',()=>{const n=document.getElementById('nav');n.classList.toggle('show');document.querySelector('.mobile-toggle').setAttribute('aria-expanded',n.classList.contains('show'))});document.getElementById('feedbackForm')?.addEventListener('submit',e=>{e.preventDefault();document.getElementById('feedbackStatus').textContent='Thank you — your feedback has been recorded for this demo. We can connect this form to the business email next.'});</script>
 </body>
-
 </html>
