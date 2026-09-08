@@ -102,6 +102,24 @@
             display: none
         }
 
+        .hero-art .hero-smoothie {
+            animation: meadowLogoBounce 3.2s ease-in-out infinite;
+            transform-origin: 50% 90%;
+            will-change: transform;
+        }
+
+        @keyframes meadowLogoBounce {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            15% { transform: translateY(-7px) rotate(-1deg); }
+            30% { transform: translateY(0) rotate(0.5deg); }
+            45% { transform: translateY(-4px) rotate(-0.5deg); }
+            60% { transform: translateY(0) rotate(0deg); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-art .hero-smoothie { animation: none; }
+        }
+
         @media(max-width:980px) {
             .family-strip {
                 grid-template-columns: 1fr
@@ -153,7 +171,7 @@
                 <p class="hero-text">We are a family-run business providing our community with organic, wholesome food
                     chosen to support healthier everyday living, health and wellbeing.</p>
                 <div class="hero-actions"><a class="button button-primary" href="menu.html">View the menu</a><a
-                        class="button button-ghost" href="#about">Our family story</a></div>
+                    class="button button-ghost" href="#about">Our family story</a></div>
                 <div class="mini-trust"><span>✓ Family run</span><span>✓ Organic choices</span><span>✓ Community
                         focused</span></div>
             </div>
